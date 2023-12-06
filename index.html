@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://kit.fontawesome.com/1b5173dcfd.js" crossorigin="anonymous"></script>
+
+    <title>Calculadora Kwh</title>
+</head>
+<body>
+    <main id="container">
+        <section id="image">
+            <img src="assets/image/ilistration.svg">
+        </section>
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - Kwh
+                </h1>
+                <div class="input-box">
+                    <label for="potencia">
+                        Potencia em Watts
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-sharp fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="potencia" step="0.01" required>
+                        <span>W</span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="tempo">
+                        Tempo de Uso
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="input-field">
+                            <input type="time" id="tempo" placeholder="Tempo de Uso">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="dias">
+                        Dias de Uso
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-plug"></i>
+                        <input type="number" id="dias" required>
+                        <span>D</span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="preco">
+                        Preço Kwh em R$
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-plug-circle-plus"></i>
+                        <input type="number" id="preco" step="0.01" required>
+                        <span>Kwh</span>
+                    </div>
+                </div>
+           
+             </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+            </form>
+            
+            <div id="infos" class="hiden">
+                <div id="result">
+                    <div id="reais">
+                        <span id="value"></span>
+                        <span>Valor R$:</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>   
+</body>
+
+<script src="/assets/js/script.js"></script>
+
+</html>
