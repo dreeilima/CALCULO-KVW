@@ -22,9 +22,9 @@ body {
   gap: 3.5rem;
 }
 
-  #title {
+#title {
     font-size: 1.5rem; /* Reduza o tamanho da fonte do título */
-  }
+}
 
 #image img {
   width: 32rem;
@@ -192,6 +192,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 
     input[type="time"] {
-        width: 230px;
+        width: 180px;
     }
 }
