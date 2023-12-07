@@ -6,7 +6,7 @@ form.addEventListener('submit', function(event) {
 
     //Pegue os valores dos elementos do formulário
     const potencia = parseFloat(document.getElementById('potencia').value);
-    const tempoInput = document.getElementById('tempo').value;
+    const tempoInput = parseFloat(document.getElementById('tempo').value);
     const dias = parseInt(document.getElementById('dias').value);
     const preco = parseFloat(document.getElementById('preco').value);
 
@@ -15,19 +15,10 @@ form.addEventListener('submit', function(event) {
         alert('Por favor, insira valores numéricos validos.');
         return;
     }
-
-    // Converter o tempo para minutos
-    const tempoEmMinutos = converterTempoParaMinutos(tempoInput).toString();
-
-    console.log(tempoInput);
-
-    function converterTempoParaMinutos(tempo) {
-        const [horas, minutos] = tempo.split(':');
-        return parseInt(horas) * 60 + parseInt(minutos);
-    }
+    
 
     //Calcular o valor em reais
-    const reais = (((potencia * dias * tempoEmMinutos) / 1000) * preco).toFixed(2);
+    const reais = (((potencia * dias * tempoInput) / 1000) * preco).toFixed(2);
 
 
 
