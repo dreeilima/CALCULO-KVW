@@ -192,6 +192,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 
     input[type="time"] {
-        width: 180px;
+        width: 220px;
     }
 }
