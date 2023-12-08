@@ -44,4 +44,5 @@ document.getElementById('infos').classList.remove('hiden');
 value.textContent = reais.replace('.', ',');
 document.getElementById('description').textContent = description;
 
+
 });
